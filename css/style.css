@@ -1,0 +1,43 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+header {
+    position: relative;
+    height: 400px;
+
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+}
+
+.bg1, .bg2 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bg1 {
+    background-image: url('https://placekitten.com/700/600');
+    min-height: 500px;
+}
+
+.bg2 {
+    background-image: url('https://placekitten.com/800/600');
+    min-height: 500px;
+}
+
+@media(max-width: 568px){
+    /* parallax may not work so well on mobile */
+    .bg1, .bg2 {
+        background-attachment: scroll;
+    }
+}
